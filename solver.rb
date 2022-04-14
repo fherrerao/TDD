@@ -5,4 +5,12 @@ class Solver
 
     number * factorial(number - 1)
   end
+
+  def reverse string
+    if string.is_a? String
+    string.reverse
+    else 
+      raise ArgumentError
+    end
+  end
 end

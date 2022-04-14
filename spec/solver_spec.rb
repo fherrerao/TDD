@@ -18,4 +18,14 @@ describe Solver do
       expect { @solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  context '#reverse' do
+    it 'check if is a string' do
+      expect { @solver.reverse(123) }.to raise_error(ArgumentError)
+    end
+
+    it 'hello should return olleh' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
